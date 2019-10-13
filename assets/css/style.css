@@ -47,6 +47,7 @@ header {
 }
 
 .navbar {
+    background: var(--twt);
     padding: 0;
     position: fixed;
     top: 0;
@@ -170,6 +171,7 @@ footer {
 }
 
 footer p {
+    font-size: 0.8rem;
     padding: 0.2rem;
     text-align: center;
     color: var(--twt);
@@ -201,6 +203,10 @@ footer p {
     .side-image img {
         display: block;
         margin-top: -450px;
+    }
+
+    footer p {
+        font-size: 1rem;
     }
 
 }
