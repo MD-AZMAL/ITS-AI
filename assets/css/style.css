@@ -10,9 +10,10 @@
 
     --trd : #C60522;
     --tbl : #1B1B1E;
-    --tgr : #6D676E;
+    --tgy : #6D676E;
     --twt : #FBFFFE;
     --tyl : #FFD428;
+    --tyl-d : #D8B21D;
     --tgr : #5DA754;
 
 }
@@ -134,24 +135,31 @@ header {
 
 section {
     background: var(--twt);
-    padding: 1rem 0.3rem;
+    padding: 0.3rem;
     margin: 0;
 }
 
 section h4 {
-    font-size: 1.7rem;
-    padding: 0 0.3rem;
+    color: var(--trd);
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.4rem 0.3rem;
     line-height: 1.5rem;
-    border-left: 5px solid var(--trd);
+    text-transform: uppercase;
 }
 
 section:nth-of-type(2n) h4 {
-    border-left: 5px solid var(--tyl);
+    color: var(--tyl-d);
 }
 
 section:nth-of-type(3n) h4 {
-    border-left: 5px solid var(--tgr);
+    color: var(--tgr);
 }
+
+section p {
+    color: var(--tgy);
+}
+
 
 .side-image img {
     display: none;
@@ -186,6 +194,9 @@ footer p {
         font-size: 1.2rem;
     }
 
+    section h4 {
+        font-size: 1.7rem;
+    }
 
     .side-image img {
         display: block;
