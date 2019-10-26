@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+/* Navbar */
 
 .navbar {
     width: 100%;
@@ -59,6 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover {
     background: var(--col4)
 }
+
+/* Hero Header */
 
 .hero {
     width: 100%;
@@ -109,6 +112,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.2);
 }
 
+/* Content */
+
 section {
     margin: 1rem 0;
 }
@@ -146,7 +151,6 @@ section .row-info {
     margin: 0;
 }
 
-
 .img-content img {
     transition: 0.2s all ease;
 }
@@ -154,6 +158,8 @@ section .row-info {
 .img-content img:hover {
     transform: scale(1.08);
 }
+
+/* Team Section */
 
 .team h2 {
     text-align: center;
@@ -246,6 +252,8 @@ section .row-info {
     color: var(--col2);
 }
 
+/* Contact Form */
+
 .contact {
     background: var(--col6);
     padding: 0.5rem;
@@ -290,6 +298,7 @@ section .row-info {
     margin-top: 0.5;
 }
 
+/* Copyright */
 
 footer p {
     font-size: 0.6rem;
@@ -299,13 +308,18 @@ footer p {
     margin: 0;
 }
 
+
+
 /* Medium screens and above */
+
 @media only screen and (min-width: 600px) {
 
     .container {
         width: 100%;
         margin: 0 auto;
     }
+
+    /* Navbar */
 
     .navbar-nav {
         margin-left: auto;
@@ -319,12 +333,16 @@ footer p {
     .nav-link {
         padding-left: 0;
     }
+
+    /* Hero Header */
     
     .hero-text {
         top: 55%;
         left: 15%;
         transform: translate(-15%,-55%);
     }
+
+    /* Content */
 
     section {
         padding: 1.5rem;
@@ -356,9 +374,13 @@ footer p {
         order: 2;
     }
 
+    /* Contact Form */
+
     .contact .container {
         width: 85%;
     }
+
+    /* Footer */
 
     footer p {
         font-size: 0.8rem;
@@ -366,7 +388,10 @@ footer p {
 
 }
 
+
+
 /* Large screens and above */
+
 @media only screen and (min-width: 768px) {
 
 }
