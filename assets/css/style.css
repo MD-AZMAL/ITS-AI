@@ -18,9 +18,6 @@ body {
     font-weight: 600;
 }
 
-nav {
-    background: var(--col3);
-}
 
 a {
     color: var(--col1);
@@ -40,9 +37,95 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    background: var(--col3);
+    transition: 0.2s all ease;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    background: none !important;
+}
+
+.navbar a{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: var(--col4)
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../images/bg/bg1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700
+}
+
+.hero-text p {
+    color: var(--col4);
+    font-size: 1.2rem;
+}
+
+.hero-text .links {
+    display: flex;
+}
+
+.hero-text a {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin: 0.2rem 0.5rem;
+    background: var(--col4);
+    transition: 0.2s all ease;
+}
+
+.hero-text .links > a:first-child {
+    background: var(--col1);
+    color: var(--col4);
+}
+
+.hero-text .links a:hover {
+    transform: scale(1.2);
+}
+
 /* Medium screens and above */
 @media only screen and (min-width: 600px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
 
+    .navbar a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .hero-text {
+        top: 55%;
+        left: 15%;
+        transform: translate(-15%,-55%);
+    }
 }
 
 /* Large screens and above */
