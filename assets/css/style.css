@@ -5,7 +5,7 @@
     --col1: #247ba0; /* buttons, links */
     --col2: #70c1b3; /* link hovers */
     --col3: #b2dbbf; /* muted texts */
-    --col4: #f5f8ea; /* background  f4fdcf*/
+    --col4: #ffffff; /* background  f4fdcf*/
     --col5: #ff1654; /* headings */
     --col6: #181e1a; /* text color */  
 }
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url('../images/bg/bg1.jpg') no-repeat center;
+    background: url('../images/bg/bg.jpg') no-repeat center;
     background-size: cover;
 }
 
@@ -111,6 +111,9 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
     margin: 1rem 0;
+}
+
+section .row-info {
     text-align: justify;
 }
 
@@ -150,6 +153,97 @@ section {
 
 .img-content img:hover {
     transform: scale(1.08);
+}
+
+.team h2 {
+    text-align: center;
+}
+
+.team .row div {
+    margin: 0.3rem 0;
+    align-items: stretch;
+}
+
+.team .card {
+    position: relative;
+    background: var(--col4);
+    box-shadow: 0px 0px 3px var(--col6);
+    transition: 0.2s all ease;
+}
+
+.team .card:hover {
+    box-shadow: 0px 0px 9px var(--col6);
+    transform: scale(1.07);
+}
+
+.team .card-img-top {
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 61%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 61%, 0% 100%);
+}
+
+.team .profile {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    border: 5px solid var(--col4);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    object-fit: cover;
+}
+
+.team .card-body {
+    padding-bottom: 0.2rem;
+}
+
+.team .card-body h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem; 
+    margin-bottom: 0.2rem;
+}
+
+.team .card-body .sep {
+    margin: 0.3rem;
+}
+
+.team .card-body p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.team .links-wrapper {
+    width: 50%;
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.team .links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.team .links a:hover {
+    transform: scale(1.4);
+}
+
+.team .links .fa-github{
+    color: var(--col6);
+}
+
+.team .links .fa-facebook-f {
+    color: var(--col1);
+}
+
+.team .links .fa-globe {
+    color: var(--col2);
 }
 
 /* Medium screens and above */
@@ -208,6 +302,7 @@ section {
     section:nth-of-type(2n) .row-info div:nth-of-type(1) {
         order: 2;
     }
+
 
 }
 
