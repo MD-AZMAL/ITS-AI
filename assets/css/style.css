@@ -127,6 +127,15 @@ section {
     font-size: 0.9rem;
 }
 
+.text-content ul {
+    position: relative;
+    left: -10px;
+}
+
+.text-content ul li {
+    list-style-type:  circle;
+}
+
 .text-content ul li p {
     position: relative;
     left: -5px;
@@ -134,9 +143,6 @@ section {
     margin: 0;
 }
 
-.text-content ul li {
-    list-style-type:  circle;
-}
 
 .img-content img {
     transition: 0.2s all ease;
@@ -183,6 +189,10 @@ section {
 
     .text-content p {
         font-size: 1rem;
+    }
+
+    .text-content ul {
+        left: 0;
     }
 
     .text-content ul li p {
