@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+:root {
+    --col1: #247ba0; /* buttons, links */
+    --col2: #70c1b3; /* link hovers */
+    --col3: #b2dbbf; /* muted texts */
+    --col4: #f4fdcf; /* background */
+    --col5: #ff1654; /* headings */
+    --col6: #181e1a; /* text color */  
+}
+
+
+body {
+    background: var(--col4);
+    color: var(--col1);
+    font-family: 'Quicksand', serif;
+    font-weight: 600;
+}
+
+nav {
+    background: var(--col3);
+}
+
+a {
+    color: var(--col1);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.2s all ease;
+}
+
+a:hover {
+    color: var(--col2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: var(--col5);
+    text-transform: uppercase;
+}
+
+/* Medium screens and above */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Large screens and above */
+@media only screen and (min-width: 768px) {
+
+}
