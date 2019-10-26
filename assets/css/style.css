@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     position: absolute;
     z-index: 999;
-    background: var(--col3);
+    background: var(--col6);
     transition: 0.2s all ease;
     padding-top: 0;
     padding-bottom: 0;
@@ -160,7 +160,8 @@ section .row-info {
 }
 
 .team .row div {
-    margin: 0.3rem 0;
+    margin-top: 0.1rem;
+    margin-bottom: 0.4rem;
     align-items: stretch;
 }
 
@@ -198,7 +199,7 @@ section .row-info {
 }
 
 .team .card-body h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem; 
@@ -210,8 +211,7 @@ section .row-info {
 }
 
 .team .card-body p {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     text-align: center;
 }
@@ -244,6 +244,59 @@ section .row-info {
 
 .team .links .fa-globe {
     color: var(--col2);
+}
+
+.contact {
+    background: var(--col6);
+    padding: 0.5rem;
+}
+
+.contact hr {
+    background: var(--col4);
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact .form-group button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.3rem 0rem;
+    background: var(--col4);
+    border: none;
+    color: var(--col1);
+    transition: 0.2s all ease;
+}
+
+.contact .form-group button:hover {
+    background: var(--col1);
+    color: var(--col4);
+    transform: scale(1.07);
+}
+
+.contact .form-group .small-col {
+    margin: 0.4rem 0;
+}
+
+.contact section {
+    padding-top: 0;
+    margin-top: 0.5;
+}
+
+
+footer p {
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--col6);
+    padding: 0.2rem;
+    margin: 0;
 }
 
 /* Medium screens and above */
@@ -303,6 +356,13 @@ section .row-info {
         order: 2;
     }
 
+    .contact .container {
+        width: 85%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 
 }
 
