@@ -74,18 +74,18 @@ h1, h2, h3, h4, h5, h6 {
 .hero-text {
     position: absolute;
     top: 50%;
+    left: 15px;
     transform: translateY(-50%);
-    padding: 0 1rem;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700
 }
 
 .hero-text p {
     color: var(--col4);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .hero-text .links {
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-text a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0.4rem 1rem;
     font-weight: bold;
     border-radius: 50px;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-text .links a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Content */
@@ -153,11 +153,9 @@ section .row-info {
 
 .img-content img {
     transition: 0.2s all ease;
+    margin-bottom: 0.8rem;
 }
 
-.img-content img:hover {
-    transform: scale(1.08);
-}
 
 /* Team Section */
 
@@ -167,7 +165,7 @@ section .row-info {
 
 .team .row div {
     margin-top: 0.1rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.65rem;
     align-items: stretch;
 }
 
@@ -342,6 +340,18 @@ footer p {
         transform: translate(-15%,-55%);
     }
 
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .hero-text a {
+        font-size: 0.9rem;
+    }
+
     /* Content */
 
     section {
@@ -368,10 +378,21 @@ footer p {
         border-radius: 30px;
         width: 90%;
         margin-left: 2rem;
+        margin-bottom: 0;       
     }
     
+    .img-content img:hover {
+        transform: scale(1.08);
+    }
+
     section:nth-of-type(2n) .row-info div:nth-of-type(1) {
         order: 2;
+    }
+
+    /* Team */
+
+    .team .row div {
+        margin-bottom: 0.2rem;
     }
 
     /* Contact Form */
