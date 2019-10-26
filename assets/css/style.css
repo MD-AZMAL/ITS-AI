@@ -5,7 +5,7 @@
     --col1: #247ba0; /* buttons, links */
     --col2: #70c1b3; /* link hovers */
     --col3: #b2dbbf; /* muted texts */
-    --col4: #f4fdcf; /* background */
+    --col4: #f5f8ea; /* background  f4fdcf*/
     --col5: #ff1654; /* headings */
     --col6: #181e1a; /* text color */  
 }
@@ -52,9 +52,8 @@ h1, h2, h3, h4, h5, h6 {
     background: none !important;
 }
 
-.navbar a{
-    padding: 0.5rem;
-    text-align: center;
+.navbar-nav .nav-link {
+    padding-left: 0.5rem;
 }
 
 .navbar a:hover {
@@ -160,6 +159,10 @@ section {
     .navbar a {
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+
+    .nav-link {
+        padding-left: 0;
     }
     
     .hero-text {
