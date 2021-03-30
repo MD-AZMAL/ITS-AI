@@ -1,7 +1,7 @@
 # ITS-AI
 ITS-AI : Intercommunicating Traffic Signals using AI
 
-[Click here to visit the website](http://azmal.me/ITS-AI)
+[Click here to visit the website](http://azmal.co.in/ITS-AI)
 
 ## Problem statement
 ---
